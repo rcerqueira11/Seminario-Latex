@@ -2,6 +2,7 @@
 
 
 \section{Metodología Tradicional} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RUP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{RUP}
 
  RUP es un proceso para el desarrollo de un proyecto de software que define claramente quien, cómo, cuándo y qué debe hacerse en el proyecto, con 3 características esenciales, está dirigido por:
@@ -18,17 +19,17 @@
 
 
 \subsubsection{Ciclo de vida}
-RUP divide el proceso en 4 fases, dentro de las cuales se realizan varias iteraciones en número variable según el proyecto y en las que se hace un mayor o menor hincapié en los distintas actividades
-% \begin{figure}[!htb]
-% 	\minipage{0.15\textwidth}
-% 	\includegraphics[width=\linewidth]{img/fases-rup.jpg}
-% 	\endminipage\hfill
-	
-% \end{figure}
+    RUP divide el proceso en 4 fases, dentro de las cuales se realizan varias iteraciones en número variable según el proyecto y en las que se hace un mayor o menor hincapié en los distintas actividades
 
+\begin{figure}[htb]
 \begin{center}
 	\includegraphics[width=13cm,height=8cm]{img/fases-rup.jpg}
 \end{center}
+\caption{Proceso RUP. (Tomada de , 2014)}
+\label{fig:anticitera}
+\end{figure}
+%https://dtyoc.com/tag/johana-vincze/
+
 
 
 \begin{itemize}
@@ -42,14 +43,89 @@ RUP divide el proceso en 4 fases, dentro de las cuales se realizan varias iterac
 	\item Fase de Transición: El propósito de esta fase es asegurar que el software esté disponible para los usuarios finales, ajustar los errores y defectos encontrados en las pruebas de aceptación, capacitar a los usuarios y proveer el soporte técnico necesario. Se debe verificar que el producto cumpla con las especificaciones entregadas por las personas involucradas en el proyecto.	
 
 \end{itemize}
+
+%https://es.scribd.com/doc/7844685/CONCEPTOS-DE-RUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END RUP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Cascada %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Cascada}
+
+Modelo en Cascada, también llamado Lineal secuencial, es el enfoque metodológico que ordena rigurosamente las etapas del proceso para el desarrollo de software, de tal forma que el inicio de cada etapa debe esperar a la finalización de la etapa anterior. 
+
+\subsubsection{Fases del Modelo}
+
+\begin{itemize}
+
+    \item Análisis de requisitos: En esta fase se analizan las necesidades de los usuarios finales del software para determinar qué objetivos debe cubrir. De esta fase surge una memoria llamada SRD (documento de especificación de requisitos), que contiene la especificación completa de lo que debe hacer el sistema sin entrar en detalles internos. 
+
+    %Es importante señalar que en esta etapa se debe consensuar todo lo que se requiere del sistema y será aquello 
+    %lo que seguirá en las siguientes etapas, no pudiéndose requerir nuevos resultados a mitad del proceso de 
+    %elaboración del software.
+
+    \item Diseño del Sistema: Se descompone y organiza el sistema en elementos que puedan elaborarse por separado, aprovechando las ventajas del desarrollo en equipo. Como resultado surge el SDD (Documento de Diseño del Software), que contiene la descripción de la estructura relacional global del sistema y la especificación de lo que debe hacer cada una de sus partes, así como la manera en que se combinan unas con otras. 
+
+    \item Diseño del Programa: Es la fase en donde se realizan los algoritmos necesarios para el cumplimiento de los requerimientos del usuario así como también los análisis necesarios para saber que herramientas usar en la etapa de Codificación.
+
+    \item Codificación: Es la fase en donde se implementa el código fuente, haciendo uso de prototipos así como de pruebas y ensayos para corregir errores. Dependiendo del lenguaje de programación y su versión se crean las bibliotecas y componentes reutilizables dentro del mismo proyecto para hacer que la programación sea un proceso mucho más rápido.
+
+    \item Pruebas: Los elementos, ya programados, se ensamblan para componer el sistema y se comprueba que funciona correctamente y que cumple con los requisitos, antes de ser entregado al usuario final.
+
+    %Existen varios tipos de Pruebas:  Pruebas de unidad Pruebas de integración Pruebas de sistema Pruebas de %aceptación
+
+    \item Verificación: Es la fase en donde el usuario final ejecuta el sistema, para ello el o los programadores ya realizaron exhaustivas pruebas para comprobar que el sistema no falle.
+
+    \item Mantenimiento: Una de las etapas mas criticas, ya que se destina un 75 de los recursos, es el mantenimiento del Software ya que al utilizarlo como usuario final puede ser que no cumpla con todas nuestras expectativas.
+
+    %Tipos de Mantenimiento: Preventivo y Perfectivo, Correctivo, Evolutivo
+
+\end{itemize}
+
+
+
+
+\begin{figure}[htb]
+\begin{center}
+	\includegraphics[width=13cm,height=8cm]{img/fases-rup.jpg}
+\end{center}
+\caption{Proceso Cascada. (Tomada de , 2014)}
+\label{fig:anticitera}
+\end{figure}
+
+
+
+
+
+
+%http://www.ecured.cu/Modelo_en_cascada
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% End Cascada %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \subsection{Cuadro Comparativo}
 
-
+\begin{table}[htb]	
+\begin{center}
+\begin{tabular}{ | m{6cm} | m{6cm}| } 
+ \hline
+ RUP & Casacada \\
+ \hline
+ val1. & val2.\\
+ \hline
+ val3. & val4.\\
+ \hline
+\end{tabular}
+\caption{Tabla comparativa de metodologías tradicionales}
+\label{Tabla:1}
+\end{center}
+\end{table}	
+.
 
 
 \section{Metodología Ágil} 
 
 El desarrollo ágil de software envuelve un enfoque para la toma de decisiones en los proyectos basados en el desarrollo iterativo e incremental, donde los requisitos y soluciones evolucionan con el tiempo según la necesidad del proyecto. Así el trabajo es realizado mediante la colaboración de equipos auto-organizados y multidisciplinarios, inmersos en un proceso compartido de toma de decisiones a corto plazo.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Scrum %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{SCRUM}
 \subsubsection{Ciclo de vida}
@@ -66,8 +142,10 @@ El desarrollo ágil de software envuelve un enfoque para la toma de decisiones e
 \setlength{\parskip}{0mm}
 
 \subsubsection{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END Scrum %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% XP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{XP}
 
 Es una metodología ágil centrada en potenciar las relaciones interpersonales como clave para el éxito en desarrollo de software, promoviendo el trabajo en equipo, preocupándose por el aprendizaje de los desarrolladores, y propiciando un buen clima de trabajo. XP se basa en realimentación continua entre el cliente y el equipo de desarrollo, comunicación fluida entre todos los participantes, simplicidad en las soluciones implementadas y coraje para enfrentar los cambios. XP se define como especialmente adecuada para proyectos con requisitos imprecisos, muy cambiantes, y donde existe un alto riesgo técnico.
@@ -104,16 +182,43 @@ Es una metodología ágil centrada en potenciar las relaciones interpersonales c
 
 \end{itemize}
 
-
-
 \subsubsection{Ciclo de vida}
+
+% http://ingenieriadesoftware.mex.tl/images/18149/PROGRAMACI%C3%93N%20EXTREMA.pdf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END XP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Agilus %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Agilus}
 \subsection{Cuadro Comparativo}
 
+
+\begin{table}[htb]	
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{4cm}| m{4cm}| } 
+ \hline
+ Scrum & XP & Agilus \\
+ \hline
+ val1. & val2. & val3.\\
+ \hline
+ val4. & val5. & val6.\\
+ \hline
+\end{tabular}
+\caption{Tabla comparativa de metodologías ágiles}
+\label{Tabla:2}
+\end{center}
+\end{table}	
+
+
+
+
+
+
+
 \section{Cuadro comparativo [Metodologías Tradicionales vs Ágiles]} 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% END Agilus %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table}[htb]	
 \begin{center}
 \begin{tabular}{ | m{6cm} | m{6cm} | } 
  \hline
@@ -157,11 +262,11 @@ Es una metodología ágil centrada en potenciar las relaciones interpersonales c
 	\hline
 
 \end{tabular}
-%\caption{Table to test captions and labels}
-%\label{table:1}
+\caption{Diferencias entre metodologías ágiles y tradicionales}
+\label{Tabla:3}
 \end{center}
+\end{table}	
 
-
-
-
+%https://es.scribd.com/doc/91676941/Metodologias-agiles-vs-tradicionales
+%http://rdsoporteymantenimientodepc.blogspot.com/2014/03/metodologias-de-desarrollo-agiles-vs.html
 
